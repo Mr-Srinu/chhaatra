@@ -51,12 +51,6 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
-.container{
-  display: flex;
-  justify-content: space-between;
-/*   align-items: center; */
-}
-
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -97,6 +91,7 @@ nav a:hover::after {
   z-index: 1100;
 }
 
+
 @media (max-width: 768px) {
   nav {
     display: none;
@@ -109,6 +104,12 @@ nav a:hover::after {
     padding: 20px 30px;
     border-radius: 10px;
   }
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+/*   align-items: center; */
+}
 
   nav.active {
     display: flex;
