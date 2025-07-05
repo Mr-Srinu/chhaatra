@@ -51,6 +51,12 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
