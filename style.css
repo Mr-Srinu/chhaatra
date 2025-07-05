@@ -104,14 +104,13 @@ nav a:hover::after {
     border-radius: 10px;
   }
 
-  .container{
+  /* .container{
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin-left: 10px;
   height: 60px;
 /*   align-items: center; */
-}
 
   nav.active {
     display: flex;
