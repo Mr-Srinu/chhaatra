@@ -112,6 +112,7 @@ nav a:hover::after {
   justify-content: space-between;
   width: 90%;
   margin-left: 10px;
+  height:60px
 /*   align-items: center; */
 }
 
