@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Chhaatra App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #6C63FF;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 15px 0;
+      font-size: 18px;
+      color: white;
+      background-color: #6C63FF;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #5548d8;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Download Chhaatra App</h1>
+  <p>We’ve detected your device architecture and prepared the correct download link for you.</p>
+
+  <a id="downloadBtn" class="btn" href="#">Detecting...</a>
+
+  <div class="info" id="infoText"></div>
+
+  <script>
+    function detectABI() {
+      let ua = navigator.userAgent.toLowerCase();
+      let apkLink = "";
+      let abiName = "";
+
+      if (ua.includes("arm64")) {
+        apkLink = "https://yourwebsite.com/app-arm64-v8a-release.apk";
+        abiName = "ARM64 (Most modern devices)";
+      } else if (ua.includes("arm") || ua.includes("armeabi")) {
+        apkLink = "https://yourwebsite.com/app-armeabi-v7a-release.apk";
+        abiName = "ARMv7 (Older Android devices)";
+      } else if (ua.includes("x86_64") || ua.includes("amd64")) {
+        apkLink = "https://yourwebsite.com/app-x86_64-release.apk";
+        abiName = "x86_64 (Emulators / rare tablets)";
+      } else {
+        // Default fallback
+        apkLink = "https://yourwebsite.com/app-arm64-v8a-release.apk";
+        abiName = "Unknown architecture (defaulting to ARM64)";
+      }
+
+      document.getElementById("downloadBtn").href = apkLink;
+      document.getElementById("downloadBtn").innerText = "Download for " + abiName;
+      document.getElementById("infoText").innerText = "Detected architecture: " + abiName;
+    }
+
+    detectABI();
+  </script>
+
+</body>
+</html>
