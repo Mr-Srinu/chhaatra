@@ -1,0 +1,56 @@
+# ==========================
+# Flutter Generated Files
+# ==========================
+
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+
+# ==========================
+# Android Generated
+# ==========================
+
+android/.gradle/
+android/app/build/
+android/local.properties
+
+# ==========================
+# iOS Generated
+# ==========================
+
+ios/Pods/
+ios/.symlinks/
+
+# ==========================
+# Node Modules
+# ==========================
+
+node_modules/
+
+# ==========================
+# IDE
+# ==========================
+
+.idea/
+.vscode/
+*.iml
+
+# ==========================
+# Logs
+# ==========================
+
+*.log
+
+# ==========================
+# Windows
+# ==========================
+
+Thumbs.db
+
+# ==========================
+# macOS
+# ==========================
+
+.DS_Store

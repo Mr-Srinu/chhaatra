@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "staging": "chhaatra-7fb15",
+    "default": "chhaatra-7fb15"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "317898603222",
+    "firebase_url": "https://chhaatra-7fb15-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chhaatra-7fb15",
+    "storage_bucket": "chhaatra-7fb15.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317898603222:android:b0dd77bab065be7cb9a777",
+        "android_client_info": {
+          "package_name": "com.example.chhaatra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGZaf_7N1ma9agC94rPllwp4R8Zk8Qbs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
